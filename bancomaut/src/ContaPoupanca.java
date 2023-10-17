@@ -1,11 +1,15 @@
-public class ContaPoupanca {
+public class ContaPoupanca extends Conta {
+   
+    public ContaPoupanca(int numeroAgencia, int numeroConta, double saldo) {
+        super(numeroAgencia, numeroConta, saldo);
+        //TODO Auto-generated constructor stub
+    }
+
     private String titular;
     private double saldo;
+    private String titular2;
 
-    public ContaPoupanca(String titular, double saldoInicial) {
-        this.titular = titular;
-        this.saldo = saldoInicial;
-    }
+
 
     public String getTitular() {
         return titular;
